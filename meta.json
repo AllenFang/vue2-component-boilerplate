@@ -1,0 +1,77 @@
+{
+  "prompts": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "message": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "message": "Project description",
+      "default": "A Vue.js 2.0 Component"
+    },
+    "version": {
+      "type": "string",
+      "required": false,
+      "message": "Initial version",
+      "default": "0.0.0"
+    },
+    "author": {
+      "type": "string",
+      "message": "Author"
+    },
+    "lint": {
+      "type": "confirm",
+      "message": "Use ESLint to lint your code?"
+    },
+    "lintConfig": {
+      "when": "lint",
+      "type": "list",
+      "message": "Pick an ESLint preset",
+      "choices": [
+        {
+          "name": "Standard (https://github.com/feross/standard)",
+          "value": "standard",
+          "short": "Standard"
+        },
+        {
+          "name": "AirBNB (https://github.com/airbnb/javascript)",
+          "value": "airbnb",
+          "short": "AirBNB"
+        },
+        {
+          "name": "none (configure it yourself)",
+          "value": "none",
+          "short": "none"
+        }
+      ]
+    },
+    "ECMAScript": {
+      "required": true,
+      "type": "list",
+      "message": "Pick a script versoin:",
+      "choices": [
+        {
+          "name": "ES6",
+          "value": "es6",
+          "short": "ES6"
+        },
+        {
+          "name": "ES5",
+          "value": "es5",
+          "short": "ES5"
+        }
+      ]
+    },
+    "unit": {
+      "type": "confirm",
+      "message": "Setup unit tests with Karma + Mocha?"
+    }
+  },
+  "filters": {
+    ".eslintrc.js": "lint",
+    "test/unit/**/*": "unit"
+  },
+  "completeMessage": "To get started:\n\n  cd {{destDirName}}\n  npm install\n  npm run dev\n\nDocumentation can be found at https://vuejs-templates.github.io/webpack"
+}
