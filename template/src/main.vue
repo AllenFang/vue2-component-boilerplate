@@ -26,9 +26,3 @@ export default {
 };
 {{/if_eq}}
 </script>
-
-<style>
-.component {
-  color: blue;
-}
-</style>
