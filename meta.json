@@ -64,6 +64,11 @@
         }
       ]
     },
+    "extract": {
+      "type": "confirm",
+      "message": "Extract css on production?",
+      "default": false
+    },
     "unit": {
       "type": "confirm",
       "message": "Setup unit tests with Karma + Mocha?"
