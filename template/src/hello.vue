@@ -6,23 +6,23 @@
 <script>
 {{#if_eq ECMAScript "es5"}}
 module.exports = {
-  name: 'hello'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-  data: function() {
+  name: 'hello',
+  data: function{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
     return {
       msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    };
+    }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-};
+}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/if_eq}}
 {{#if_eq ECMAScript "es6"}}
 export default {
-  name: 'hello'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
+  name: 'hello',
   data{{#unless_eq lintConfig "airbnb"}} {{/unless_eq}}() {
     return {
       msg: 'Welcome to Your Vue.js App'{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-    };
+    }{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
   }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
-};
+}{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/if_eq}}
 </script>
 
