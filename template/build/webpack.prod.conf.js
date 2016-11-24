@@ -25,6 +25,9 @@ var webpackConfig = merge(baseWebpackConfig, {
     new webpack.DefinePlugin({
       'process.env': "'production'"
     }),
+    {{#extract}}
+    new ExtractTextPlugin('css/[name].[contenthash].css'),
+    {{/extract}}
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false

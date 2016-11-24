@@ -7,7 +7,7 @@ import Main from './main'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/if_eq}}
 
 if (typeof window !== 'undefined') {
-  window.Main = Main;
+  window.Main = Main{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 }
 
 {{#if_eq ECMAScript "es5"}}
