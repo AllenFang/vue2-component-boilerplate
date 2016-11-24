@@ -8,7 +8,7 @@ more simple and suitable for developing a vue2 component instead a vue applicati
 * Only compitable for ```vue2.0```
 
 I saw some vue components on github which use boilderplate but there are a lots of configurations
-and files is unuseless, so hope this minimal boilerplate can help you to have a clean and simple enviorment for developing your component.
+and files is useless, so hope this minimal boilerplate can help you to have a clean and simple enviorment for developing your component.
 
 ## Getting Started
 For using this boilerplate, you need to scaffold your repo by [vue-cli](https://github.com/vuejs/vue-cli)
