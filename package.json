@@ -1,6 +1,6 @@
 {
   "name": "vue2-component-boilerplate",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "It's boilerplate for that people who want to develop a vue2 component",
   "scripts": {
