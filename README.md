@@ -52,4 +52,5 @@ $ npm run dev
 ├── .gitignore                  # git ignore config
 ├── index.html                  # html used on webpack-dev-server
 └── package.json                # package.json
+└── README.md                   # README.md
 ```
