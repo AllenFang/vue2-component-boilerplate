@@ -4,7 +4,5 @@
   "license": "MIT",
   "description": "It's boilerplate for that people who want to develop a vue2 component",
   "scripts": {
-    "docs": "cd docs && gitbook serve",
-    "deploy-docs": "bash ./deploy-docs.sh"
   }
 }
