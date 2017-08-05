@@ -7,7 +7,7 @@ more simple and suitable for developing a vue2 component instead a vue applicati
 * A minimal entry and html for preview the result on development
 * Only compitable for ```vue2.0```
 
-I saw some vue components on github which use boilderplate but there are a lots of configurations
+I saw some vue components on github which use boilerplate but there are a lots of configurations
 and files is useless, so hope this minimal boilerplate can help you to have a clean and simple enviorment for developing your component.
 
 ## Getting Started
